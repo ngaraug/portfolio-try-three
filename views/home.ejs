@@ -1,0 +1,105 @@
+<%- include('partials/header.ejs') -%>
+
+<body>
+    <div id="home">
+        <div id="intro-container">
+            <span class="intro small Iam">Hi, I am</span>
+            <span class="intro big gaurang">GAURANG</span>
+            <span class="intro big mestry">MESTRY</span>
+            <span class="intro small desc">junior software developer</span>
+            <span class="cv-container"><a class="outSection-link intro small cv" href="images/my resume 2.pdf" target="_blank">// curriculum</a><a class="outSection-link intro small cv" href="images/my resume 2.pdf" target="_blank">&nbsp; vitae.</a></span>
+        </div>
+        
+    </div>
+    <div id="about">
+        <div class="about-container">
+            <h1 class="about-me"><a class="inSection-link about-me-text" href="#about">about me.</a></h1>
+            <div class="photo-container">
+                <img class="my-photo" src="images/Profile image 2.jpg" alt="My photo">
+            </div>
+            <div class="about-desc">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dignissimos id, eius necessitatibus blanditiis laboriosam doloribus mollitia nulla beatae sit consequuntur nobis? Adipisci sequi architecto praesentium aliquam, veritatis consequatur aspernatur.
+                Eligendi dolorum doloribus, suscipit molestias incidunt eos ea sit sapiente ex corporis soluta nam labore vitae quia possimus rem eum fugiat quod? Vitae dicta doloremque tempora repellat quibusdam ullam suscipit!
+                Veritatis velit tempore quia veniam commodi perspiciatis ipsa laborum hic libero, eligendi quaerat explicabo ullam accusamus minima officia ipsam dolor minus, fugit dolores? Dolores excepturi corporis repellat voluptates! Et, aut!
+                Assumenda, molestiae distinctio nemo veritatis modi dolorem? Cum velit quibusdam quos quisquam temporibus esse assumenda facilis optio, pariatur cumque ad dolore alias itaque minus. Blanditiis velit non cumque quo magnam.
+                Quam nobis atque sapiente nostrum, veritatis, officiis at vitae ipsa officia, quod inventore. Ab tempora consectetur aliquid necessitatibus perspiciatis aut, impedit cupiditate optio animi delectus aliquam nemo et, provident molestias?
+                </p>
+                
+            </div>
+        </div>
+        <div id="contact-links-container">
+            <div class="hamburgerMenuGit">
+                <div class="backgroundCircleGit" ></div>
+                <img class="git-icon" src="https://github.com/ngaraug/portfolio/blob/main/Icons/GitHub-minimalistic-1.png?raw=true" alt="">
+            </div>
+            <div class="hamburgerMenuLinkedIn">
+                <div class="backgroundCircleLinkedId" ></div>
+                <img class="LI-icon" src="https://github.com/ngaraug/portfolio/blob/main/Icons/LinkedIn-minimalistic-1.png?raw=true" alt="">
+            </div>
+            <div class="hamburgerMenuLeet">
+                <div class="backgroundCircleLeet" ></div>
+                <img class="leet-icon" src="https://github.com/ngaraug/portfolio/blob/main/Icons/leetcode-minimalistic-1.png?raw=true" alt="">
+            </div>
+            <div class="hamburgerMenuInstagram">
+                <div class="backgroundCircleInstagram" ></div>
+                <img class="insta-icon" src="https://github.com/ngaraug/portfolio/blob/main/Icons/Instagram-minimalistic-1.png?raw=true" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h1 class="about-me"><a class="inSection-link about-me-text" href="#skills">relevent skills.</a></h1>
+        
+        <div class="skills-container">
+            <div class="skill">
+                <img class="skill-icon html" src="https://github.com/ngaraug/portfolio/blob/main/Icons/HTML-colored-1.png?raw=true" alt="HTML5" title="HTML5">
+            </div>
+            <div class="skill">
+                <img class="skill-icon css" src="https://github.com/ngaraug/portfolio/blob/main/Icons/CSS-colored-1.png?raw=true" alt="CSS" title="CSS">
+            </div>
+            <div class="skill">
+                <img class="skill-icon js" src="https://github.com/ngaraug/portfolio/blob/main/Icons/JS-colored-1.png?raw=true" alt="JavaScript" title="JavaScript">
+            </div>
+            <div class="skill">
+                <img class="skill-icon mongo" src="https://github.com/ngaraug/portfolio/blob/main/Icons/MongoDB-colored-1.png?raw=true" alt="MongoDB" title="MongoDB">
+            </div>
+            <div class="skill">
+                <img class="skill-icon react" src="https://github.com/ngaraug/portfolio/blob/main/Icons/React-colored-1.png?raw=true" alt="ReactJS" title="ReactJS">
+            </div>
+            <div class="skill">
+                <img class="skill-icon node" src="https://github.com/ngaraug/portfolio/blob/main/Icons/NodeJS-colored-1.png?raw=true" alt="NodeJS" title="NodeJS">
+            </div>
+            <div class="skill">
+                <img class="skill-icon express" src="https://github.com/ngaraug/portfolio/blob/main/Icons/express-minimalistic-1.png?raw=true" alt="ExpressJS" title="ExpressJS">
+            </div>
+            <div class="skill">
+                <img class="skill-icon python" src="https://github.com/ngaraug/portfolio/blob/main/Icons/Python-colored-1.png?raw=true" alt="Pyhton" title="Python">
+            </div>
+            
+        </div>
+    </div>
+    <div id="projetcs">
+        <h1 class="about-me"><a class="inSection-link about-me-text" href="#projetcs">projects.</a></h1>
+        <div class="about-desc">
+            <div class="projects-container">
+
+                <% for(i in projects){ %>
+                    <form class="project-form" action= <%= "/projects/" + projects[i].name %>>
+                        <button class="project" type="submit">
+                            <img class="project-image" src= <%= projects[i].images[0] %> alt=<%= projects[i].title%>>
+                            <div class="project-title-container">
+                                <span class="project-title"><%= projects[i].title%></span>
+                            </div>
+                        </button>
+                    </form>
+                <% } %>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="/nav-behaviour.js"></script>
+</body>
+</html>
+

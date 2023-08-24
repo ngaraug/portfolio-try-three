@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') -%>
+
+<body>
+    <div id="project-page">
+        <h1 class="project-page-title"><%= project.title %></h1>
+        <h2 class="project-page-date"><%= project.date %></h2>
+        <div class="project-page-desc-container" >
+            <h2 class="project-page-desc" ><%= project.desc %></h2>
+        </div>
+        <div class="project-page-tech-container">
+            <span class="project-page-tech-title">Technologies used: </span>
+            <% for(let i in project.technologies){ %>
+                <span class="project-page-tech"><%= project.technologies[i] %>,&nbsp;</span>
+            <% } %>
+        </div>
+        <div class="project-page-link-container">
+            <span class="project-page-link-span"><a class="inSection-link project-page-link" href= <%= project.git %> target="_blank" >// code</a> </span>
+            <span class="project-page-link-span"><a class="inSection-link project-page-link" href= <%= project.live %> target="_blank" >// live application</a> </span>
+        </div>
+        <h3 class="project-page-screenshots">screenshots.</h3>
+        <div class="project-page-images-container">
+            <% for(i in project.images){ %>
+                <div class="project-page-image-container">
+                    <img class="project-page-image" src=<%= project.images[i] %>>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <script src="/project-behaviour.js"></script>
+</body>
+</html>
