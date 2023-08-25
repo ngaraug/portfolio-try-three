@@ -34,9 +34,9 @@ html::-webkit-scrollbar-thumb{
 
 
 /* Nav bar */
-navbar{
+/* navbar{
     /* navbar marker */
-}
+} */
 nav{
     max-width: 100vw;
 }
@@ -167,9 +167,9 @@ nav{
 }
 
 /* Nav List */
-nav-list{
+/* nav-list{
     start;
-}
+} */
 nav{
     z-index: 999;
 }
@@ -237,9 +237,9 @@ nav{
 
 /* responsive for navBar */
 @media only screen and (max-width: 600px) {
-    logo{
+    /* logo{
         start;
-    }
+    } */
     .logo-container{
         padding-top: 0.7rem;
         padding-left: 1.5rem;
@@ -254,9 +254,9 @@ nav{
         height: 2rem;
     }
 
-    plusicon{
+    /* plusicon{
         start;
-    }
+    } */
     /* .hamburgerMenu{
         width: 45px;
         height: 55px;
@@ -286,9 +286,7 @@ nav{
 /* -- Nav section end */
 
 /* Home section start */
-home{
-    /* home marker */
-}
+
 #home{
     
     max-width: 100vw;
@@ -400,9 +398,9 @@ home{
 /* home section end */
 
 /* About section start */
-about{
+/* about{
 
-}
+} */
 #about{
     padding-top: 8vh;
     width: 100vw;
@@ -597,9 +595,9 @@ about{
 
 /* responsive --about */
 @media only screen and (max-width: 600px) {
-    about{
+    /* about{
         start;
-    }
+    } */
     #about{
         padding-top: 8vh;
     }
@@ -627,9 +625,9 @@ about{
 /* About section -end */
 
 /* Skill section -start */
-skills{
+/* skills{
     
-}
+} */
 #skills{
     padding-top: 8vh;
 }
@@ -655,9 +653,9 @@ skills{
 
 /* responsive skills */
 @media only screen and (max-width: 600px){
-    skills{
+    /* skills{
         start;
-    }
+    } */
     .skills-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -668,9 +666,9 @@ skills{
 /* Skills section -end */
 
 /* Projects section start */
-projects{
+/* projects{
 
-}
+} */
 #projetcs{
     padding-top: 8vh;
     width: 100vw;
@@ -728,9 +726,9 @@ projects{
 /* Projcts section -end */
 
 /* Projects Page start */
-project page{
+/* project page{
 
-}
+} */
 #project-page{
     padding: 3rem;
     padding-top: 10vh;
