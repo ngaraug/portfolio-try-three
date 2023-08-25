@@ -437,7 +437,7 @@ about{
     position: relative;
 
     border-radius: 50%;
-    transition: transform 0.1s ease-in-out;   
+    transition: box-shadow 0.1s ease-in-out;   
 }
 .my-photo:hover{
     transform: scale(1.1, 1.1);
@@ -601,7 +601,7 @@ about{
         start;
     }
     #about{
-        padding-top: 1vh;
+        padding-top: 8vh;
     }
     .about-me{
         padding: 1rem;
@@ -619,6 +619,9 @@ about{
     }
     .my-photo{
         width: 10rem;
+    }
+    .backgroundCircleInstagram{
+        transform: scale(1,1);
     }
 }
 /* About section -end */
@@ -860,5 +863,26 @@ project page{
         padding-top: 1rem;
         font-size: 1.5rem;
     }
+    .project-hamburgerMenu > img{
+        width: 40px;
+        height: 40px;
+     }
+     .project-backgroundCircle{
+         /* width: 80%;
+         height: 80%; */
+         opacity: 1;
+     }
+}
+
+/* For JS animation */
+.hidden{
+    opacity: 0;
+    transform: translateY(-25px);
+    transition: transform 0.3s ease-in, opacity 1s ease-in;
+}
+
+.reveal{
+    opacity: 1;
+    transform: translateX(0px);
 }
    

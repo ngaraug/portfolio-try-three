@@ -12,26 +12,26 @@
 
 <body>
     <div id="project-page">
-        <h1 class="project-page-title"><%= project.title %></h1>
-        <h2 class="project-page-date"><%= project.date %></h2>
+        <h1 class="project-page-title hidden"><%= project.title %></h1>
+        <h2 class="project-page-date hidden"><%= project.date %></h2>
         <div class="project-page-desc-container" >
-            <h2 class="project-page-desc" ><%= project.desc %></h2>
+            <h2 class="project-page-desc hidden" ><%= project.desc %></h2>
         </div>
-        <div class="project-page-tech-container">
+        <div class="project-page-tech-container hidden">
             <span class="project-page-tech-title">Technologies used: </span>
             <% for(let i in project.technologies){ %>
                 <span class="project-page-tech"><%= project.technologies[i] %>,&nbsp;</span>
             <% } %>
         </div>
         <div class="project-page-link-container">
-            <span class="project-page-link-span"><a class="inSection-link project-page-link" href= <%= project.git %> target="_blank" >// code</a> </span>
-            <span class="project-page-link-span"><a class="inSection-link project-page-link" href= <%= project.live %> target="_blank" >// live application</a> </span>
+            <span class="project-page-link-span"><a class="inSection-link project-page-link hidden" href= <%= project.git %> target="_blank" >// code</a> </span>
+            <span class="project-page-link-span"><a class="inSection-link project-page-link hidden" href= <%= project.live %> target="_blank" >// live application</a> </span>
         </div>
-        <h3 class="project-page-screenshots">screenshots.</h3>
+        <h3 class="project-page-screenshots hidden">screenshots.</h3>
         <div class="project-page-images-container">
             <% for(i in project.images){ %>
                 <div class="project-page-image-container">
-                    <img class="project-page-image" src=<%= project.images[i] %>>
+                    <img class="project-page-image hidden" src=<%= project.images[i] %>>
                 </div>
             <% } %>
         </div>

@@ -164,7 +164,7 @@ function loadCardsAtEnd(){
     for(let i=0; i<5; i++){
         const link = document.createElement('a');
         link.textContent = '// ABOUT'
-        link.href = '/'
+        link.href = '#about'
         link.classList.add('link')
         linksContainer.append(link)
         link.addEventListener('click',()=>{
@@ -202,7 +202,7 @@ function loadCardsAtEnd(){
 
         const link2 = document.createElement('a');
         link2.textContent = '// PROJECTS'
-        link2.href = '#projects'
+        link2.href = '#projetcs'
         link2.classList.add('link')
         linksContainer.append(link2)
         link2.addEventListener('click',()=>{
@@ -250,8 +250,8 @@ const lastCardObserver = new IntersectionObserver((entries)=>{
 // -myphoto
 const myPhoto = document.querySelector('.my-photo')
 myPhoto.addEventListener("mousemove", (e) => {
-    const xPos = (-e.offsetX - 27.5)* 0.1;
-    const yPos = (-e.offsetY - 27.5)*0.1;
+    const xPos = (-e.offsetX + 160)* 0.1;
+    const yPos = (-e.offsetY + 160)*0.1;
     myPhoto.style.transform = "scale(1, 1) translate3d(" + xPos + "px, " + yPos + "px, 0)"
 });
 myPhoto.addEventListener('mouseleave', ()=>{
@@ -366,3 +366,44 @@ hamburgerMenuInsta.addEventListener("mousemove", (e) => {
     backgroundCircleInsta.style.transform = "scale(1,1) translate3d(" + xPos + "px, " + yPos + "px, 0)"
     instaIcon.style.transform = "scale(0.5, 0.5) translateX(" + xPosPlusIcon + "px";
 });
+
+// Animations
+const options = {
+    threshold: 0.5,
+}
+
+const intersectionObserver = new IntersectionObserver((entries)=>{
+    entries.forEach((card)=>{
+        if(card.isIntersecting){
+            card.target.classList.add('reveal')
+        }else{
+            // card.target.classList.remove('reveal')
+        }
+    })
+}, options)
+
+function observeElementsOfClass(classArray){
+    classArray.forEach((className)=>{
+        intersectionObserver.observe(className);
+    })
+}
+
+// IObserver for skills class
+const skills = document.querySelectorAll(".skill")
+observeElementsOfClass(skills)
+
+// IObserver for projects class
+const projects = document.querySelectorAll('.project-form')
+observeElementsOfClass(projects)
+
+// IObserver for socials class
+const socials = document.querySelectorAll('.socials')
+observeElementsOfClass(socials)
+
+// IObserver for about class
+const about = document.querySelectorAll('.about')
+observeElementsOfClass(about)
+
+// IObserver for headings class
+const headings = document.querySelectorAll('.about-me')
+observeElementsOfClass(headings)
