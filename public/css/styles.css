@@ -34,9 +34,6 @@ html::-webkit-scrollbar-thumb{
 
 
 /* Nav bar */
-/* navbar{
-    /* navbar marker */
-} */
 nav{
     max-width: 100vw;
 }
@@ -873,10 +870,11 @@ nav{
 }
 
 /* For JS animation */
+
 .hidden{
     opacity: 0;
-    transform: translateY(-25px);
-    transition: transform 0.3s ease-in, opacity 1s ease-in;
+    transform: translateY(-24px);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 
 .reveal{
