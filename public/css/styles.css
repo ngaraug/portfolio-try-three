@@ -618,6 +618,27 @@ nav{
     .backgroundCircleInstagram{
         transform: scale(1,1);
     }
+    .hamburgerMenuInstagram > img{
+        filter: invert(1);
+    }
+    .backgroundCircleGit{
+        transform: scale(1,1);
+    }
+    .hamburgerMenuGit > img{
+        filter: invert(1);
+    }
+    .backgroundCircleLeet{
+        transform: scale(1,1);
+    }
+    .hamburgerMenuLeet > img{
+        filter: invert(1);
+    }
+    .backgroundCircleLinkedId{
+        transform: scale(1,1);
+    }
+    .hamburgerMenuLinkedIn > img{
+        filter: invert(1);
+    }
 }
 /* About section -end */
 
