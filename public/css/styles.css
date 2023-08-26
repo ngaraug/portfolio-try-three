@@ -616,25 +616,25 @@ nav{
         width: 10rem;
     }
     .backgroundCircleInstagram{
-        transform: scale(1,1);
+        transform: scale(1.01,1.01);
     }
     .hamburgerMenuInstagram > img{
         filter: invert(1);
     }
     .backgroundCircleGit{
-        transform: scale(1,1);
+        transform: scale(1.01,1.01);
     }
     .hamburgerMenuGit > img{
         filter: invert(1);
     }
     .backgroundCircleLeet{
-        transform: scale(1,1);
+        transform: scale(1.01,1.01);
     }
     .hamburgerMenuLeet > img{
         filter: invert(1);
     }
     .backgroundCircleLinkedId{
-        transform: scale(1,1);
+        transform: scale(1.01,1.01);
     }
     .hamburgerMenuLinkedIn > img{
         filter: invert(1);
