@@ -32,7 +32,7 @@ let projectsList = [
         title: "Miniedit Editor",
         date: 'May 2023',
         desc: "Miniedit is an online code editor which can be used to edit and run small HTML, CSS, JavaScript snippets. It is my personal project that makes use of the codemirror library and React.",
-        live: false,
+        live: 'https://miniedit-react-project-oq1rw749i-ngaraug.vercel.app/',
         git: 'https://github.com/ngaraug/miniedit_react_project',
         technologies: ['HTML5', 'CSS', 'JS', 'ReactJS'],
         images: [
